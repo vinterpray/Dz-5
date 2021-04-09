@@ -64,7 +64,7 @@
         <?php endforeach;  ?>
     <?php endif;?>
     <?php if (!empty($validate['success']) and $validate['success']):?>
-        <?php q($_POST) ?>
+        <?php AddUser($_POST) ?>
         <?php foreach (getUsers() as $user):?>
             <div style="clear:both; text-align:center; color: black"; font-size: 42px">
                 <?= $user ['name']?>    <?= $user ['last_name']?>    <?= $user ['email']?>   <?= $user ['age']?>
