@@ -17,7 +17,7 @@ function getUsers (): array {
 
 }
 
-function q($post)
+function AddUser($post)
 {
     global $conn;
     $st = $conn->prepare('insert into users (name, last_name, email, age) values (?, ?, ?, ?)');
